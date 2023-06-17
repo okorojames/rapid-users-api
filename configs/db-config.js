@@ -6,7 +6,6 @@ const PORT = process.env.PORT;
 // connection method
 const connectDB = async () => {
   try {
-    console.log(MONGO_URI, "hwfar");
     await mongoose.connect(MONGO_URI);
     console.log("db connected at port " + PORT);
   } catch (err) {
